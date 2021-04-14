@@ -42,6 +42,10 @@ public class Student {
     sc.nextLine();
 
     Exam exam = new Exam(examName, grade);
+
+    for(int i = 0; i < 7; i++) {
+      exams[i] = exam;
+    }
   }
 
   public void showGrades() {
