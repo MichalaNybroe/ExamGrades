@@ -1,3 +1,5 @@
+import exam.NotAGrade;
+
 public class Exam {
 
   //ATTRIBUTES
@@ -25,6 +27,9 @@ public class Exam {
   }
 
   public void setGrade(int grade){
+    if(grade != -3 || grade != 0 || grade != 2 || grade != 4 || grade != 7 || grade != 10 || grade != 12){
+      //throws new NotAGrade;
+    }
     this.grade = grade;
   }
 
