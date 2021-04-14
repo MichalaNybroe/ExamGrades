@@ -3,7 +3,7 @@ public class Student {
   //ATTRIBUTES
   private String name;
   private String studentID;
-  Exam[] exams;
+  Exam[] exams = new Exam[7];
 
   //CONSTRUCTOR
   public Student(String name, String studentID){
