@@ -32,6 +32,7 @@ public class Student {
 
   //METHODS
 
+<<<<<<< HEAD
   void registerExamGrades(){
     System.out.println("Enter name of the exam: ");
     String examName = sc.nextLine();
@@ -39,11 +40,16 @@ public class Student {
     System.out.println("Enter grade: ");
     int grade = sc.nextInt();
     sc.nextLine();
+=======
+  public void registerExamGrades(){
+    
+>>>>>>> 7850d4747848d3599ee2e81cb5d306ec3db4048e
   }
 
-  @Override
-  String toString(){
-
+  public void showGrades() {
+    for (int i = 0; i < exams.length; i++) {
+      System.out.printf("Exam number %d: %s\n", i, exams[i]);
+    }
+    System.out.println();
   }
-
 }
