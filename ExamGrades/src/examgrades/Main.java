@@ -9,7 +9,6 @@ public class Main {
   Scanner sc = new Scanner(System.in);
   ArrayList<Student> students = new ArrayList<>();
 
-
   //METHODS
   public static void main(String[] args) {
     new Main().run();
@@ -42,12 +41,10 @@ public class Main {
         default:
           System.out.println("NOT A VALID INPUT");
       }
-
-
-      registerStudent();
     }
   }
 
+<<<<<<< HEAD
   private void showStudentList() {
     for(int i = 0; i < students.size(); i++){
       System.out.println(students.get(i));
@@ -55,6 +52,9 @@ public class Main {
   }
 
   public void registerStudent(){
+=======
+  public void registerStudent() {
+>>>>>>> dc5ebdd9a75172b5886a1828fce0d36ea55a4895
 
     System.out.println("Enter the name og the student: ");
     String name = sc.nextLine();
@@ -66,4 +66,16 @@ public class Main {
     students.add(student);
   }
 
+  public void removeStudent() {
+    System.out.println("Which student is to be removed?\nPlease Write their studentID");
+    String removableStudent = sc.nextLine();
+    System.out.println();
+    for (int i = 0; i < students.size(); i++) {
+      if (removableStudent.equals(students.get(i).getStudentID())) {
+        students.remove(students.get(i));
+      }
+      System.out.println("This is not a registered studentID");
+    }
+  }
 }
+

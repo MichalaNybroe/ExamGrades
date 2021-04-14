@@ -36,7 +36,7 @@ public class Student {
 
   //METHODS
 
-  void registerExamGrades(){
+  public void registerExamGrades(){
 
     for(int i = 0; i < 7; i++) {
     System.out.println("Enter name of the exam: ");
