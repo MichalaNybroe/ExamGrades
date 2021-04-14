@@ -3,18 +3,22 @@ package examgrades;
 import java.util.Scanner;
 
 public class Menu {
+
+  //ATTRIBUTES
   private String menuHeader;
   private String leadText;
   private String[] menuItems;
 
   Scanner scanner = new Scanner(System.in);
 
+  //CONSTRUCTOR
   public Menu(String menuHeader, String leadText, String[] menuItems) {
     this.menuHeader = menuHeader;
     this.leadText = leadText;
     this.menuItems = menuItems;
   }
 
+  //GETTER
   public String getMenuHeader() {
     return menuHeader;
   }
@@ -27,6 +31,7 @@ public class Menu {
     return menuItems;
   }
 
+  //METHODS
   public void printMenu() {
     System.out.println(getMenuHeader());
     for (int i = 0; i < menuItems.length; i++) {
