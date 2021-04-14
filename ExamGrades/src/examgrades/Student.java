@@ -14,6 +14,8 @@ public class Student {
   public Student(String studentName, String studentID){
     setStudentName(studentName);
     setStudentID(studentID);
+    registerExamGrades();
+    showGrades();
   }
 
   //GETTER
