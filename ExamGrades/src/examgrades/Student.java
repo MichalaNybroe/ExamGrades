@@ -34,7 +34,7 @@ public class Student {
 
   //METHODS
 
-  void registerExamGrades(){
+  public void registerExamGrades(){
 
     for(int i = 0; i < 7; i++) {
     System.out.println("Enter name of the exam: ");
@@ -57,7 +57,7 @@ public class Student {
 
   public void showGrades() {
     for (int i = 0; i < exams.length; i++) {
-      System.out.printf("Exam number %d:\n %s\n", i, exams[i]);
+      System.out.printf("Exam number %d:\n %s\n", i + 1, exams[i]);
     }
     System.out.println();
   }

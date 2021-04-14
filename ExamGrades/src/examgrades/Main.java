@@ -10,7 +10,7 @@ public class Main {
 
   public void registerStudent(){
 
-    System.out.println("Enter the name og the student: ");
+    System.out.println("Enter the name of the student: ");
     String name = sc.nextLine();
     System.out.println("Enter the student ID: ");
     String studentId = sc.nextLine();
