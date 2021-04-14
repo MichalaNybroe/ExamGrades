@@ -14,6 +14,8 @@ public class Student {
   public Student(String studentName, String studentID){
     setStudentName(studentName);
     setStudentID(studentID);
+    registerExamGrades();
+    showGrades();
   }
 
   //GETTER
@@ -57,7 +59,7 @@ public class Student {
 
   public void showGrades() {
     for (int i = 0; i < exams.length; i++) {
-      System.out.printf("Exam number %d:\n %s\n", i, exams[i]);
+      System.out.printf("Exam number %d:\n %s\n", i + 1, exams[i]);
     }
     System.out.println();
   }
