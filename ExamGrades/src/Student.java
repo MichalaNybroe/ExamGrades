@@ -34,6 +34,7 @@ public class Student {
 
   void registerExamGrades(){
 
+    for(int i = 0; i < 7; i++) {
     System.out.println("Enter name of the exam: ");
     String examName = sc.nextLine();
     sc.nextLine();
@@ -43,8 +44,8 @@ public class Student {
 
     Exam exam = new Exam(examName, grade);
 
-    for(int i = 0; i < 7; i++) {
-      exams[i] = exam;
+    exams[i] = exam;
+
     }
   }
 
