@@ -27,4 +27,11 @@ public class Exam {
   public void setGrade(int grade){
     this.grade = grade;
   }
+
+  //METHODS
+
+  @Override
+  public String toString(){
+    return "The grade you got in " + getName() + " was: " + getGrade();
+  }
 }
