@@ -15,7 +15,7 @@ public class Main {
   }
 
   public void run() {
-    String[] menuItems = new String[3];
+    String[] menuItems = new String[4];
     menuItems[0] = "1. View studentlist";
     menuItems[1] = "2. Register student";
     menuItems[2] = "3. Remove student";
@@ -43,7 +43,7 @@ public class Main {
       }
     }
   }
-  
+
   private void showStudentList() {
     for(int i = 0; i < students.size(); i++){
       System.out.println(students.get(i));
@@ -51,7 +51,7 @@ public class Main {
   }
 
   public void registerStudent(){
-    System.out.println("Enter the name og the student: ");
+    System.out.println("Enter the name of the student: ");
     String name = sc.nextLine();
     System.out.println("Enter the student ID: ");
     String studentId = sc.nextLine();
