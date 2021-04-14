@@ -31,8 +31,7 @@ public class Student {
   public void setStudentID(String studentID) { this.studentID = studentID;}
 
   //METHODS
-
-<<<<<<< HEAD
+  
   void registerExamGrades(){
     System.out.println("Enter name of the exam: ");
     String examName = sc.nextLine();
@@ -40,10 +39,7 @@ public class Student {
     System.out.println("Enter grade: ");
     int grade = sc.nextInt();
     sc.nextLine();
-=======
-  public void registerExamGrades(){
-    
->>>>>>> 7850d4747848d3599ee2e81cb5d306ec3db4048e
+
   }
 
   public void showGrades() {
