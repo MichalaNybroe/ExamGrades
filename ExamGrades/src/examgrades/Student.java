@@ -43,6 +43,11 @@ public class Student {
     System.out.println("Enter grade: ");
     int grade = sc.nextInt();
     sc.nextLine();
+    if (grade != -3 && grade != 0 && grade != 2 && grade != 4 && grade != 7 && grade != 10 && grade != 12) {
+      System.out.println("Enter a grade on the scale: ");
+      grade = sc.nextInt();
+      sc.nextLine();
+    }
 
     Exam exam = new Exam(examName, grade);
 
