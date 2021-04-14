@@ -43,7 +43,17 @@ public class Main {
     }
   }
 
+<<<<<<< HEAD
+  private void showStudentList() {
+    for(int i = 0; i < students.size(); i++){
+      System.out.println(students.get(i));
+    }
+  }
+
+  public void registerStudent(){
+=======
   public void registerStudent() {
+>>>>>>> dc5ebdd9a75172b5886a1828fce0d36ea55a4895
 
     System.out.println("Enter the name og the student: ");
     String name = sc.nextLine();
