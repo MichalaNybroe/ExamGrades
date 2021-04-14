@@ -23,7 +23,6 @@ public class Main {
     Menu studentMenu = new Menu("Student Menu:", "Choose an option", menuItems);
 
     int choice = 0;
-    boolean keepRunning = true;
 
     while (choice != 9) {
       studentMenu.printMenu();
@@ -68,4 +67,3 @@ public class Main {
     }
   }
 }
-
