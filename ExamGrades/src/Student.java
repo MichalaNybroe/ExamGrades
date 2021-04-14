@@ -29,13 +29,14 @@ public class Student {
 
   //METHODS
 
-  void registerExamGrades(){
+  public void registerExamGrades(){
     
   }
 
-  @Override
-  String toString(){
-
+  public void showGrades() {
+    for (int i = 0; i < exams.length; i++) {
+      System.out.printf("Exam number %d: %s\n", i, exams[i]);
+    }
+    System.out.println();
   }
-
 }
