@@ -48,6 +48,12 @@ public class Main {
     }
   }
 
+  private void showStudentList() {
+    for(int i = 0; i < students.size(); i++){
+      System.out.println(students.get(i));
+    }
+  }
+
   public void registerStudent(){
 
     System.out.println("Enter the name og the student: ");
