@@ -1,7 +1,7 @@
 public class Exam {
 
   //ATTRIBUTES
-  private String name;
+  private String examName;
   private int grade;
 
   //CONSTRUCTOR
@@ -11,8 +11,8 @@ public class Exam {
   }
 
   //GETTER
-  public String getName(){
-    return name;
+  public String getExamName(){
+    return examName;
   }
 
   public int getGrade(){
@@ -21,7 +21,7 @@ public class Exam {
 
   //SETTER
   public void setName(String name){
-    this.name = name;
+    this.examName = name;
   }
 
   public void setGrade(int grade){
@@ -32,6 +32,6 @@ public class Exam {
 
   @Override
   public String toString(){
-    return "The grade you got in " + getName() + " was: " + getGrade();
+    return "The grade you got in " + getExamName() + " was: " + getGrade();
   }
 }
