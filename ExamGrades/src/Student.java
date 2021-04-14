@@ -31,8 +31,9 @@ public class Student {
   public void setStudentID(String studentID) { this.studentID = studentID;}
 
   //METHODS
-  
+
   void registerExamGrades(){
+
     System.out.println("Enter name of the exam: ");
     String examName = sc.nextLine();
     sc.nextLine();
