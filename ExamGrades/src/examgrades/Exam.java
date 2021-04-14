@@ -1,4 +1,4 @@
-import exam.NotAGrade;
+package examgrades;
 
 public class Exam {
 
