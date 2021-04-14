@@ -1,20 +1,30 @@
 public class Student {
+
+  //ATTRIBUTES
   private String name;
   private String studentID;
+  Exam[] exams;
 
- public void setName(String name) {
-   this.name = name;
- }
+  //CONSTRUCTOR
+  public Student(String name, String studentID){
+    setName(name);
+    setStudentID(studentID);
+  }
 
- public void setStudentID(String studentID) {
-
- }
-
+  //GETTER
   public String getName() {
     return name;
   }
 
   public String getStudentID() {
-   return studentID;
+    return studentID;
   }
+
+  //SETTER
+  public void setName(String name) {
+   this.name = name;
+ }
+
+  public void setStudentID(String studentID) { this.studentID = studentID;}
+
 }
