@@ -70,9 +70,21 @@ public class Main {
   }
 
   public void removeStudent() {
+<<<<<<< HEAD
     System.out.println("Which student is to be removed?\nPlease enter their number.");
     int studentNumber = sc.nextInt();
     System.out.println();
     students.remove(students.get(studentNumber - 1));
+=======
+    System.out.println("Which student is to be removed?\nPlease enter student number: ");
+    int removableStudent = sc.nextInt();
+    System.out.println();
+    for (int i = 0; i < students.size(); i++) {
+      if (removableStudent == students.get(i)) {
+        students.remove(students.get(i));
+      }
+    }
+    System.out.println("This is not a registered studentID");
+>>>>>>> c95c20783ef23d03a77ecfd0ffe18722a1d836a1
   }
 }
