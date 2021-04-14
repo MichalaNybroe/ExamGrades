@@ -18,13 +18,24 @@ public class Main {
     students.add(student);
   }
 
-
   public void run() {
     String[] menuItems = new String[3];
     menuItems[0] = "1. View studentlist";
     menuItems[1] = "2. Register student";
     menuItems[2] = "9. Quit";
 
+    Menu studentMenu = new Menu("Student Menu:", "Choose an option", menuItems);
+
+    int choice;
+    boolean keepRunning = true;
+
+    do {
+      studentMenu.printMenu();
+      choice = studentMenu.readChoice();
+      switch () {
+
+      }
+    } while ()
     registerStudent();
   }
 }
