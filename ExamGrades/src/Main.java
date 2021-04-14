@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-<<<<<<< HEAD
+
   Scanner sc = new Scanner(System.in);
   ArrayList<Student> students = new ArrayList<>();
 
@@ -19,12 +19,8 @@ public class Main {
   }
 
 
-=======
-
-
   public void run() {
     registerStudent();
   }
-  
->>>>>>> d833b0bcae64996b3f870d4c4e1d80b1e773e15a
+
 }

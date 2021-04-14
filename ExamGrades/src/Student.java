@@ -41,6 +41,7 @@ public class Student {
     int grade = sc.nextInt();
     sc.nextLine();
 
+    Exam exam = new Exam(examName, grade);
   }
 
   public void showGrades() {
