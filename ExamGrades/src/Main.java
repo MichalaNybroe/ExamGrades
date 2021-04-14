@@ -21,6 +21,9 @@ public class Main {
 
   public void run() {
     String[] menuItems = new String[3];
+    menuItems[0] = "1. View studentlist";
+    menuItems[1] = "2. Register student";
+    menuItems[2] = "9. Quit";
 
     registerStudent();
   }

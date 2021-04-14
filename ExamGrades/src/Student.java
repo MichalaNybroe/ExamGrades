@@ -45,7 +45,6 @@ public class Student {
     Exam exam = new Exam(examName, grade);
 
     exams[i] = exam;
-
     }
   }
 
