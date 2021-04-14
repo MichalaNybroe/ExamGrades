@@ -29,8 +29,13 @@ public class Student {
 
   //METHODS
 
-  void enterExam(){
+  void registerExamGrades(){
     
+  }
+
+  @Override
+  String toString(){
+
   }
 
 }
