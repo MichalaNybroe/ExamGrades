@@ -40,6 +40,7 @@ public class Main {
           break;
         case 9:
           System.out.println("QUIT");
+          break;
         default:
           System.out.println("NOT A VALID INPUT");
       }
@@ -58,7 +59,7 @@ public class Main {
   }
 
   public void registerStudent(){
-    System.out.println("Enter the name og the student: ");
+    System.out.println("Enter the name of the student: ");
     String name = sc.nextLine();
     System.out.println("Enter the student ID: ");
     String studentId = sc.nextLine();
@@ -69,14 +70,9 @@ public class Main {
   }
 
   public void removeStudent() {
-    System.out.println("Which student is to be removed?\nPlease Write their studentID");
-    String removableStudent = sc.nextLine();
+    System.out.println("Which student is to be removed?\nPlease enter their number.");
+    int studentNumber = sc.nextInt();
     System.out.println();
-    for (int i = 0; i < students.size(); i++) {
-      if (removableStudent.equals(students.get(i).getStudentID())) {
-        students.remove(students.get(i));
-      }
-    }
-    System.out.println("This is not a registered studentID");
+    students.remove(students.get(studentNumber - 1));
   }
 }
