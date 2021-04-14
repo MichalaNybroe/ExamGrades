@@ -27,4 +27,10 @@ public class Student {
 
   public void setStudentID(String studentID) { this.studentID = studentID;}
 
+  //METHODS
+
+  void enterExam(){
+    
+  }
+
 }
