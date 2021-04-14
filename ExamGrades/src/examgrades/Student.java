@@ -15,7 +15,6 @@ public class Student {
     setStudentName(studentName);
     setStudentID(studentID);
     registerExamGrades();
-    showGrades();
   }
 
   //GETTER
@@ -61,5 +60,10 @@ public class Student {
       System.out.printf("Exam number %d:\n %s\n", i + 1, exams[i]);
     }
     System.out.println();
+  }
+
+  @Override
+  public String toString(){
+    return "Student name: " + getStudentName() + "\nStudent ID: " + getStudentID();
   }
 }
