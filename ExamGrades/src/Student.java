@@ -45,7 +45,7 @@ public class Student {
 
   public void showGrades() {
     for (int i = 0; i < exams.length; i++) {
-      System.out.printf("Exam number %d: %s\n", i, exams[i]);
+      System.out.printf("Exam number %d:\n %s\n", i, exams[i]);
     }
     System.out.println();
   }
