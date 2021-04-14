@@ -70,7 +70,7 @@ public class Main {
   }
 
   public void removeStudent() {
-    System.out.println("Which student is to be removed?\nPlease enter their number.");
+    System.out.println("Which student is to be removed?\nPlease enter their number: ");
     int studentNumber = sc.nextInt();
     System.out.println();
     students.remove(students.get(studentNumber - 1));

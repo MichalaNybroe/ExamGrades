@@ -11,11 +11,12 @@ class MainTest {
     //ARRANGE
     Main main = new Main();
     Student student = new Student("Signe", "123");
-    String expected = "123";
+
 
     //ACT
-    //String actual = main.removeStudent();
+    main.removeStudent();
 
     //ASSERT
+
   }
 }
