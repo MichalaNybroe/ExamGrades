@@ -41,7 +41,6 @@ public class Student {
     for(int i = 0; i < 7; i++) {
     System.out.println("Enter name of the exam: ");
     String examName = sc.nextLine();
-    sc.nextLine();
     System.out.println("Enter grade: ");
     int grade = sc.nextInt();
     sc.nextLine();

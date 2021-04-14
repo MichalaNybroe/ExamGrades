@@ -18,12 +18,12 @@ public class Main {
     String[] menuItems = new String[3];
     menuItems[0] = "1. View studentlist";
     menuItems[1] = "2. Register student";
-    menuItems[2] = "9. Quit";
+    menuItems[2] = "3. Remove student";
+    menuItems[3] = "9. Quit";
 
     Menu studentMenu = new Menu("Student Menu:", "Choose an option", menuItems);
 
     int choice = 0;
-    boolean keepRunning = true;
 
     while (choice != 9) {
       studentMenu.printMenu();
@@ -43,7 +43,11 @@ public class Main {
       }
     }
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f1a5b60c847af65f792bbd3a667244f94a13e427
   private void showStudentList() {
     for(int i = 0; i < students.size(); i++){
       System.out.println(students.get(i).toString());
@@ -51,7 +55,10 @@ public class Main {
   }
 
   public void registerStudent(){
+<<<<<<< HEAD
 
+=======
+>>>>>>> f1a5b60c847af65f792bbd3a667244f94a13e427
     System.out.println("Enter the name og the student: ");
     String name = sc.nextLine();
     System.out.println("Enter the student ID: ");
@@ -74,4 +81,3 @@ public class Main {
     }
   }
 }
-
