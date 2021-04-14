@@ -69,11 +69,11 @@ public class Main {
   }
 
   public void removeStudent() {
-    System.out.println("Which student is to be removed?\nPlease Write their studentID");
-    String removableStudent = sc.nextLine();
+    System.out.println("Which student is to be removed?\nPlease enter student number: ");
+    int removableStudent = sc.nextInt();
     System.out.println();
     for (int i = 0; i < students.size(); i++) {
-      if (removableStudent.equals(students.get(i).getStudentID())) {
+      if (removableStudent == students.get(i)) {
         students.remove(students.get(i));
       }
     }
