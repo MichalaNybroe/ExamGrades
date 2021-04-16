@@ -55,13 +55,6 @@ public class Student {
     }
   }
 
-  public void showGrades() {
-    for (int i = 0; i < exams.length; i++) {
-      System.out.printf("Exam number %d:\n %s\n", i + 1, exams[i]);
-    }
-    System.out.println();
-  }
-
   @Override
   public String toString(){
     return "Student name: " + getStudentName() + "\nStudent ID: " + getStudentID();
