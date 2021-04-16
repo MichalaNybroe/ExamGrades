@@ -1,2 +1,2 @@
 # ExamGrades
-Assignment week 15: Kamille og Michala
+Assignment week 15: KamilleNi og MichalaNybroe
