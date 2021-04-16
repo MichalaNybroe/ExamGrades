@@ -17,6 +17,10 @@ public class Student {
     registerExamGrades();
   }
 
+  public Student(String studentName) {
+    setStudentName(studentName);
+  }
+
   //GETTER
   public String getStudentName() {
     return studentName;
